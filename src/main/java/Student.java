@@ -1,5 +1,8 @@
 package ie.atu;
+import java.io.FileWriter;
 import java.util.Scanner;
+import java.io.File;
+import java.io.IOException;
 
 public class Student {
 
@@ -14,6 +17,7 @@ public class Student {
         this.idNumber = 0;                   // Constructor for the class
         this.age = 0;
         this.address = "";
+        this.filename = "";
     }
 
     public Student(String name, int idNumber, int age, String address) {
@@ -49,8 +53,22 @@ public class Student {
     }
 
     public void getFileName(){
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.print(" Enter ")
+        System.out.print("Enter new file name : ");
+        this.filename = scanner.nextLine();
+
+
 
     }
+
+    public void createFile() {
+        File myFile = new File(filename);
+
+
+
+
+
+    }
+
 }

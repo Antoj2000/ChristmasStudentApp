@@ -12,6 +12,8 @@ public class Main {
         Student student1 = new Student();
         student1.getUserInput();
         student1.displayInfo();
+        student1.getFileName();
+        student1.createFile();
 
     }
 }
