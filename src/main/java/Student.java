@@ -2,6 +2,8 @@ package ie.atu;
 import java.util.Scanner;
 
 public class Student {
+
+    String filename;
     String name;
     int idNumber;
     int age;
@@ -43,6 +45,12 @@ public class Student {
 
         System.out.print("Enter age : ");
         this.age = scanner.nextInt();
+
+    }
+
+    public void getFileName(){
+
+        System.out.print(" Enter ")
 
     }
 }
